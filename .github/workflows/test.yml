@@ -9,6 +9,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug路径
+        run: |
+          echo "当前路径:"
+          pwd
+          echo "目录结构:"
+          ls -R
+
       - name: 拉代码
         uses: actions/checkout@v3
 
