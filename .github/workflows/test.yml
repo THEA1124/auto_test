@@ -12,6 +12,11 @@ jobs:
       - name: 拉代码
         uses: actions/checkout@v3
 
+      - name: 查看目录（调试用）
+        run: |
+          pwd
+          ls -R
+
       - name: 安装Python
         uses: actions/setup-python@v4
         with:
